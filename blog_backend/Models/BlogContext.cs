@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace blog_backend.Models
 {
-    public class BlogItemContext : DbContext
+    public class BlogContext : DbContext
     {
-        public BlogItemContext(DbContextOptions<BlogItemContext> options) : base(options)
+        public BlogContext(DbContextOptions<BlogContext> options) : base(options)
         { }
 
         public DbSet<BlogItem> BlogItems { get; set; }
